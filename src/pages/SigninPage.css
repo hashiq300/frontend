@@ -1,0 +1,114 @@
+.signin-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+}
+
+.sign-in-nav {
+  background-color: hsl(130, 68%, 57%);
+  color: black;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sign-in-nav .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.sign-in-main::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  transform: translateY(-1rem);
+  border-top: 1px black solid;
+}
+
+.sign-in-main {
+  position: relative;
+  background-color: white;
+  border-radius: 2rem;
+  flex-grow: 1;
+}
+
+.signin-page .content {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 90%;
+  max-width: 600px;
+}
+
+.signin-page .content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.signin-page .content p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sign-in-main .form {
+  margin: 0 auto;
+  margin-top: 3rem;
+  /* border: 1px solid black; */
+  width: 70vw;
+  max-width: 600px;
+}
+
+.sign-in-main .form input {
+  width: 100%;
+  height: 3rem;
+  background-color: #f0eded;
+  border-width: 1px 3px 3px 1px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding-left: 0.75rem;
+}
+
+.sign-in-main .form input:focus {
+  outline: transparent;
+}
+
+.sign-in-main .form button {
+  width: 110%;
+  transform: translateX(-5%);
+  background-color: black;
+  color: white;
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+@media (min-width: 800px) {
+  .signin-page {
+    font-size: 2rem;
+  }
+
+  .signin-page .content h1 {
+    font-size: 3rem;
+  }
+
+  .signin-page .content p {
+    font-size: 1.5rem;
+  }
+
+  .sign-in-main .form input {
+    height: 5rem;
+  }
+
+  .sign-in-nav .nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}

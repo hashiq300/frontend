@@ -1,0 +1,25 @@
+.navigation {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(130, 68%, 57%);
+  padding: 1rem 3rem;
+}
+
+.navigation h1 {
+  font-size: 2rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navigation a {
+  text-decoration: underline;
+}
+.logo a {
+  text-decoration: none;
+}

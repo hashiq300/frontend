@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Sudo Var Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sudo Var Regular"), url("/font/SudoVariable.woff") format("woff");
+}
+
+body {
+  font-family: "Sudo Var Regular";
+}
